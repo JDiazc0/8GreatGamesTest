@@ -36,6 +36,8 @@ public class TrolleyController : MonoBehaviour
             head.rotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.y));
             partRotations[0] = head.rotation;
 
+            MoveTrolley();
+
             for (int i = 1; i < trolleyParts.Length; i++)
             {
                 if (i == 1)
@@ -49,7 +51,6 @@ public class TrolleyController : MonoBehaviour
                 }
             }
 
-            MoveTrolley();
         }
     }
 
