@@ -31,6 +31,7 @@ public class InputManager : MonoBehaviour
                 Vector2Int newDirection = GetDirectionFromSwipe(swipeDirection);
                 selectedTrolley.ChangeDirection(newDirection);
             }
+            selectedTrolley = null;
         }
     }
 
